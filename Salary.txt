@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+int salary;
+int hours;	
+int rate;
+
+ cout<<"enter rate ";
+cin>>rate;
+cout<<"enter hours worked";
+cin>>hours;
+if (hours > 40){
+salary=(hours * rate) + (rate/2);
+cout<<salary;
+}
+else{
+	salary = hours * rate;
+	cout<<salary;
+}
+
+  system("pause");
+
+return 0;
+}

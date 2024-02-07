@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    double sales, com, earn;
+    cout<<"enter sales in Rs:";
+    cin>>sales;
+    if(sales >= 0){
+     com = sales / 100 * 9;
+     earn = com + 2000;
+     cout<<"Salary is;"<<earn<<"Rs";}
+     else
+     cout<<"Sorry, salary cannot be computed";
+     return 0;
+
+}

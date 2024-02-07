@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float num;
+	float sum=1;
+	int j = 3;
+	cout<<"Enter number of terms to evaluate : ";
+	cin>>num;
+	
+	for(float i = 3  ; num >= i;i=i+2 , j=j+2){
+		if((j+1) % 4 == 0){
+			sum = sum - (1/i);
+		
+		}
+		else{
+			sum = sum + (1/i);
+			
+		}
+	}
+	cout<<"Value of pi : "<<sum*4;
+	return 0;
+}

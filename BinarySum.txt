@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	unsigned long long int bi,x,j=0,sum;
+	cout<<"Begin binary input : "<<endl;
+	cin>>bi;
+	x=bi;
+	while(bi == 0 || bi == 1){
+		x=(x * 10)+bi;
+		j++;
+	    if(j>=5){
+		    sum= x % 100000;
+		    if(sum == 10101){
+		        cout<<"Input terminated"<<endl;
+		        break;
+	}
+	cin>>bi;
+}
+
+}
+
+	return 0;
+}

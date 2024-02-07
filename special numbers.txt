@@ -1,0 +1,33 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	
+	int num,ii,j=0;
+	int iii,sum=0,p,rem;
+	cout<<"Enter value : ";
+	cin>>num;
+	cout<<"These are all special numbers from "<<num<<" to 0 "<<endl;
+	for(int i = num;i>=0;i--){
+		ii=i;
+		iii=i;
+		while(ii>0){
+			ii=ii/10;
+			j=j+1;
+		}
+		while(iii>0){
+			rem=iii%10;
+			p=pow(rem,j);
+			sum=sum + p;
+			iii=iii/10;
+		}
+		if(sum == i){
+			cout<<sum<<endl;
+		}
+		sum=0;
+		j=0;
+	}
+	return 0;
+}
+	

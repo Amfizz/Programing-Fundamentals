@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	unsigned long long int num , bi=0 , i=1,x=0,sum=0;
+	cout<<"Enter Denery value : ";
+	cin>>num;
+	while( num>0 ){
+		bi= num%2;
+		num = num / 2;
+		sum=(bi*i)+x;
+		x=sum;
+		i=i*10;
+		}
+		cout<<"Binary value is : "<<sum;
+	
+	return 0;
+	
+}

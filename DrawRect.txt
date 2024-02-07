@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+void Draw_Rectange(int x,int y) {
+	if (x<0||y<0)
+	{
+		cout << "Rectangle is not possible";
+			 
+	}
+	else
+	{
+		for (size_t i = 0; i < x; i++)
+		{
+			for (size_t c = 0; c < y; c++)
+			{
+				cout << "O";
+			}
+			cout << endl;
+		}
+	}
+}
+int main() {
+	int height, widht;
+	cout << "Enter Height : ";
+	cin >> height;
+	cout << "Enter width : ";
+	cin >> widht;
+	Draw_Rectange(height, widht);
+}

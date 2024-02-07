@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int sum;
+	int num;
+	cout<<"enter a positive number:";
+	sum=0;
+	cin>>num;
+	while(num>0){
+		sum+=num;
+		cin>>num;
+	}
+	cout<<"total sum of positive number is:"<<sum;
+	return 0;
+}

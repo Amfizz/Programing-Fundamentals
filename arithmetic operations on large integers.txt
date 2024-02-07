@@ -1,0 +1,99 @@
+
+#include<iostream>
+using namespace std;
+
+
+int bigin(int a[], int size){
+    cout<<"Enter bigin:";
+    int count=1;
+    for(int i=0;i<size;i++){
+        cin>>a[i];
+        if(a[i]==0&&i<1){
+            i--;
+        }
+        if(a[i]>9)
+        i--;
+    }
+    return 0;
+}
+int bigout(int m[],int p){
+    for(int i= 0;i<p;i++){
+        cout<<m[i];
+    
+    }
+    cout<<endl;
+    return 0;
+}
+int bigadd(int a[],int b[], int c[],int size){
+ int carryOver = 0;
+int flag=0;
+cout<<"big1+big2:";
+ for(int i = size-1;i>=0; i--) {
+    if(flag==1){
+     c[i]=a[i]+b[i]+1;
+     flag=0;
+    }
+     else{
+     c[i]=a[i]+b[i];
+     }
+     if(c[i]>9){
+         c[i]=c[i]-10;
+         c[i+1]+=1;
+         flag=1;
+     }
+    
+        
+    }
+    
+   
+
+ for(int i=0;i<size;i++) { 
+     cout<<c[i];
+ }
+ cout<<endl;
+ return 0;
+}
+int bigsub(int a[], int b[], int c[], int size){
+    int war=1;
+cout<<"big1-big2:";
+ for(int i = size-1;i>=0; i--) {
+    
+     c[i]=a[i]-b[i];
+   if(a[0]<b[0] && war==1){
+     cout<<"negative";
+     war=0;
+     }
+   else  if(c[i]<=-1 && i!=1){
+         c[i]=c[i]+10;
+         c[i-1]-=1;
+         
+     }
+    
+        
+    }
+    if(war!=0){
+for(int i=0;i<size;i++) { 
+     cout<<c[i];
+ }
+	}
+return 0;
+}
+
+
+    
+
+int main(){
+const int size = 10;
+int big1[size];
+int big2[size];
+int big3[size + 1];
+int big4[size];
+int n;
+cout<<"enter size:";
+cin>>n;
+cout<<"Enter size "<<size<<" array:"<<endl;
+bigin(big1,n);
+bigin(big2,n);
+bigadd(big1,big2,big3,n); 
+bigsub(big1,big2,big4,n);
+}

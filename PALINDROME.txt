@@ -1,0 +1,27 @@
+
+#include <iostream>
+using namespace std;
+int Check_palindrome(int no) {
+	int dig, rev=0, x;
+	x = no;
+	for (size_t i = no; no > 0; no = no / 10)
+	{
+		dig = no % 10;
+		rev = (rev * 10) + dig;
+	}
+	return rev;
+}
+int main() {
+	int num,Return;
+	cout << "Enter number : ";
+	cin >> num;
+	Return =Check_palindrome(num) ;
+	if ( num==Return)
+	{
+		cout << "Palindrome";
+	}
+	else
+	{
+		cout << "Not Palindrome";
+	}
+}

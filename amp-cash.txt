@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int cash, bill, amp;
+    cout<<"enter the bill:";
+    cin>>bill;
+    cout<<"enter the amount paid:";
+    cin>>amp;
+    cash = amp-bill;
+    if(amp>=bill)
+    {
+    cout<<"5000s:"<<cash/5000<<endl;
+    cash=cash%5000;
+    cout<<"1000s:"<<cash/1000<<endl;
+    cash=cash%1000;
+    cout<<"500s:"<<cash/500<<endl;
+    cash=cash%500;
+    cout<<"100s:"<<cash/100<<endl;
+    cash=cash%100;
+    cout<<"50s:"<<cash/50<<endl;
+    cash=cash%50;
+    cout<<"20s:"<<cash/20<<endl;
+    cash=cash%20;
+    cout<<"10s:"<<cash/10<<endl;
+    cash=cash%10;
+    cout<<"2s:"<<cash/2<<endl;
+    cash=cash%2;
+    cout<<"1s:"<<cash;
+    }
+    else{
+    cout<<"warning! you paid less tahn the bill";}
+    return 0;
+}

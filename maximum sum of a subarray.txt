@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int max=0,sum=0,n;
+    cout<<"enter N:";
+    cin>>n;
+    const int size = 10;
+    int list[size] = {2,4,5,9,7,12,2,10,8,5};
+    int j=0;
+    
+        for(int i=0;i<=10-n;i++){
+            sum=0;
+            for(int j=0;j<n;j++){
+                sum+=list[i+j];
+               
+            }
+             if(max<sum){
+                  max=sum;
+             }
+        }
+        cout<<"Max "<<n<<"-tuplet: "<<max;
+}

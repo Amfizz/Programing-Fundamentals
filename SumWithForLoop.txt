@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int i, a, sum;
+    sum=0;
+    cout<<"enter a number:";
+    cin>>i;
+    for(a=1;a<=i;a=a+2)
+    {
+    cout<<a<<"  ";
+    sum=sum+a;
+    }
+    cout<<"sum is:"<<sum;
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a, sq, count;
+    count = 0;
+    cout<<"enter a number";
+    cin>>a;
+    while(count<10){
+    sq=a*a;
+    cout<<sq<<endl;
+    count++;
+    a++;
+    }
+    return 0;
+}

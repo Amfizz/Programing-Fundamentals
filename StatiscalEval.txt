@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+void numbers(int num) {
+	int sum = 0, avg = 0, Max = 0, min = 10000,c=0,ano_num;
+	ano_num = num;
+	while (ano_num>=0)
+	{
+		sum = sum + ano_num;
+		c++;
+		if (ano_num > Max)
+		{
+			Max = ano_num;
+		}
+		if (ano_num < min)
+		{
+			min = ano_num;
+		}
+		cout << "Another num :";
+		cin >> ano_num;
+	}
+	if (ano_num<0)
+
+	{
+		cout<<"Sum " << sum<<endl;
+		cout<<"Max " << Max << endl;
+		cout<<"Min " << min << endl;
+		cout<<"Avg " << sum / c << endl;
+	}
+}
+int main() {
+	int x;
+	cout << "Enter num : ";
+	cin >> x;
+	numbers(x);
+}

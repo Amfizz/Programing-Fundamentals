@@ -1,0 +1,16 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+int x,y;
+y=1;
+cout<<"Enter the value for which you want the table:";
+cin>>x;
+while(y<=10)
+{
+cout<<x<<"*"<<y<<"="<<y*x<<endl;
+y=y+1;
+}
+getch();
+}

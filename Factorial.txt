@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n, fact, count;
+    fact=1; 
+    count=1;
+    cout<<"enter a number:";
+    cin>>n;
+    while(count<=n){
+        fact=fact*count;
+        count=count+1;
+    }
+    cout<<fact;
+    return 0;
+
+    }
+
+
